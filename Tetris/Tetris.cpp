@@ -410,6 +410,7 @@ LRESULT CALLBACK WndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam)
 		return PAINT;
 		break;
 	case WM_DESTROY:
+		endGame = true;
 		PostQuitMessage(0);
 		break;
 	default:
